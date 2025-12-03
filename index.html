@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Direitos Humanos — Educação em Direitos Humanos</title>
 
-  <!-- Google Fonts: Raleway (títulos) + Poppins (textos) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome -->
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" />
 
   <style>
     :root{
-      --primary: #0d47a1; /* azul forte */
+      --primary: #0d47a1;
       --accent: #00a8ff;
       --muted: #f1f6ff;
       --card: #ffffff;
@@ -24,12 +23,12 @@
     html,body{height:100%;margin:0;font-family:'Poppins',system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
     body{background:linear-gradient(180deg,var(--muted),#ffffff);color:#222;line-height:1.6}
 
-    /* LOGO GRANDE NO TOPO */
+   
     .site-logo{
       display:block;margin:28px auto 6px;max-width:230px;width:100%;border-radius:18px;filter:drop-shadow(0 6px 18px rgba(13,71,161,0.18));
     }
 
-    /* NAVBAR */
+   
     .nav-wrap{background:transparent;padding:10px 0;box-shadow:0 6px 18px rgba(13,71,161,0.04)}
     .nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 20px}
 
@@ -41,11 +40,11 @@
     .search input{border:0;outline:0;padding:8px 10px;width:220px;font-size:14px}
     .search button{background:var(--primary);color:#fff;border:0;padding:8px 12px;border-radius:999px;cursor:pointer;font-weight:600}
 
-    /* BANNER */
+  
     .banner{max-height:420px;overflow:hidden;border-radius:14px;margin:20px auto 10px;max-width:1200px}
     .banner img{width:100%;height:auto;display:block;object-fit:cover}
 
-    /* HERO TITLE over banner (overlay) */
+   
     .hero-cta{max-width:1200px;margin:-110px auto 40px;padding:0 20px;display:flex;align-items:center;justify-content:center}
     .hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.95),#ffffff);padding:30px;border-radius:16px;box-shadow:0 12px 40px rgba(13,71,161,0.12);width:100%;max-width:1000px}
     .hero-card h1{font-family:'Raleway';color:var(--primary);font-size:36px;margin:0 0 10px}
@@ -53,11 +52,11 @@
     .hero-quick{display:flex;gap:12px;flex-wrap:wrap}
     .pill{background:rgba(0,168,255,0.08);color:var(--primary);padding:8px 12px;border-radius:999px;font-weight:600}
 
-    /* CONTENT AREA */
+  
     .container{max-width:1100px;margin:40px auto;padding:0 20px}
     .grid{display:grid;grid-template-columns:1fr 340px;gap:26px}
 
-    /* main article */
+    
     article.card{background:var(--card);padding:28px;border-radius:14px;box-shadow:0 10px 30px rgba(13,71,161,0.06)}
     article.card h2{font-family:'Raleway';color:var(--primary);font-size:22px;margin-top:14px;margin-bottom:10px}
     article.card h3{font-family:'Raleway';color:#09407a;margin-top:22px;margin-bottom:8px}
@@ -65,35 +64,104 @@
     article.card ul{background:#f6fbff;padding:14px;border-radius:10px;margin:10px 0}
     article.card li{margin:10px 0}
 
-    /* sidebar */
+   
     aside{position:relative}
     .toc{background:linear-gradient(180deg,#ffffff, #f7fbff);padding:18px;border-radius:12px;box-shadow:0 8px 20px rgba(13,71,161,0.04)}
     .toc h4{font-family:'Raleway';color:var(--primary);margin:0 0 10px}
     .toc a{display:block;color:#135; text-decoration:none;padding:8px 6px;border-radius:8px;margin-bottom:6px;font-size:14px}
     .toc a:hover{background:rgba(0,168,255,0.07)}
 
-    /* Highlight quote */
     .callout{background:linear-gradient(90deg,rgba(13,71,161,0.06),rgba(0,168,255,0.04));padding:18px;border-radius:12px;margin:18px 0;font-style:italic;color:#05366a}
 
-    /* CTA footer */
+   
     .cta{margin:28px 0;padding:22px;border-radius:12px;background:linear-gradient(90deg,var(--accent),var(--primary));color:#fff;text-align:center;font-weight:700}
 
     /* GIF final */
     .gif-wrap{display:flex;justify-content:center;margin:36px 0}
     .gif-wrap img{width:220px;border-radius:12px;box-shadow:0 10px 30px rgba(13,71,161,0.12)}
 
-    /* responsive */
+   
     @media (max-width:980px){.grid{grid-template-columns:1fr}.nav .menu{display:none}.search input{width:120px}.hero-card h1{font-size:28px}}
     @media (max-width:520px){.hero-card{padding:18px}.search input{width:90px}}
+
+    * Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.podcast-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+
+.audio-player audio {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+.iframe-player iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .podcast-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .audio-player audio,
+    .iframe-player iframe {
+        max-width: 100%;
+    }
+}
+
 
   </style>
 </head>
 <body>
 
-  <!-- LOGO (grande no topo) -->
-  <img src="Logo de Doação Gradiente Azul e Branco (1).png" alt="Logo" class="site-logo" />
+ 
+  <img src="Logo de Doação Gradiente Azul e Branco.png" alt="Logo" class="site-logo" />
 
-  <!-- NAVBAR com menu + pesquisa (abaixo do logo) -->
+  
   <div class="nav-wrap">
     <nav class="nav">
       <div class="menu">
@@ -110,12 +178,12 @@
     </nav>
   </div>
 
-  <!-- BANNER -->
-  <div class="banner">
-    <img src="Banner para Site Novembro Azul Se Ame Se Cuide Delicado Azul (2).png" alt="Banner" />
+  
+  <div class="site-banner">
+    <img src="banner.png" alt="Banner" />
   </div>
 
-  <!-- HERO CARD sobre o banner -->
+  
   <div class="hero-cta">
     <div class="hero-card">
       <h1>Educação em Direitos Humanos — Formando Corações e Consciências</h1>
@@ -129,11 +197,11 @@
     </div>
   </div>
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  
   <main class="container">
     <div class="grid">
 
-      <!-- ARTIGO PRINCIPAL -->
+      
       <article class="card" id="inicio">
 
         <h2>O que é Educação em Direitos Humanos?</h2>
@@ -176,11 +244,10 @@
         <h3>Conclusão</h3>
         <p>A Educação em Direitos Humanos é um investimento no presente e no futuro. Ao transformar práticas educativas, construímos sociedades mais solidárias, inclusivas e humanas.</p>
 
-        <div class="cta">Quer transformar sua escola ou comunidade? Comece hoje: compartilhe, dialogue e promova ações concretas.</div>
+        <div class="cta">Feito por: Stephanie D, Amanda, Milena e Liana</div>
 
       </article>
 
-      <!-- SIDEBAR -->
       <aside>
         <div class="toc">
           <h4>Conteúdo Rápido</h4>
@@ -189,7 +256,6 @@
           <a href="#">Objetivos</a>
           <a href="#">Práticas</a>
           <a href="#historia">Contexto</a>
-          <a href="#contato">Contato</a>
         </div>
 
         <div style="height:18px"></div>
@@ -203,10 +269,37 @@
       </aside>
 
     </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast - Embutido no Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="podcast-container">
+        <h1>Podcast: DIREITOS HUMANOS</h1>
 
-    <!-- GIF final -->
+       
+        <div class="audio-player">
+            <h2>Ouça diretamente:</h2>
+            <audio controls>
+                <source src="direitoshumanos.mp3" type="mp3">
+            </audio>
+        </div>
+
+     
+        <div class="iframe-player">
+            <h2>Ouça nosso podcast:</h2>
+           <audio controls>
+  <source src="https://www.dropbox.com/scl/fi/0ry5ma1jidr61x7e7ho5x/direitoshumanos.mp3?rlkey=jvw1w0ryl3g69y7o83o9ejlfi&st=tpmktv77&dl=1" type="audio/mpeg">
+  Seu navegador não suporta o elemento de áudio.
+</audio>
+
+        </div>
+    </div>
+
     <div class="gif-wrap">
-      <img src="https://drive.google.com/file/d/18kcZUVgDy1RCVTenJMY1_dWWS3ZC78WY/view" alt="Gif" />
+      <img src="BMO.gif" alt="Gif" />
     </div>
 
   </main>
